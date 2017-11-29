@@ -1,0 +1,94 @@
+<div class="modal-header">
+	<h5 class="modal-title" id="exampleModalLongTitle">Edit Character</h5>
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="modal-body">
+	<form>
+		<div class="form-group">
+			<label for="dchero-name">Name:</label>
+			<input type="text" class="form-control" id="dchero-name" placeholder="Ex.: Bruce Wayne">
+		</div>
+		<div class="form-group">
+			<label for="dchero-title">Title:</label>
+			<input type="text" class="form-control" id="dchero-title" placeholder="Ex.: Batman" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Subtitle:</label>
+			<input type="text" class="form-control" id="dchero-subtitle" placeholder="Ex.: World's Greatest Detective" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label>Age is Over Eighteen:</label>
+			<div class="form-check">
+			<% Testmodel.forEach((item, i) => { %>
+				<% if (item.lovesMemes === false) { %>
+					<label class="form-check-label">
+						<input class="form-check-input" id="dchero-over-eighteen" name="characterOverEighteen" type="checkbox" value="" onChange="" checked> Check if True
+					</label>
+				<% } else { %>
+					<label class="form-check-label">
+						<input class="form-check-input" id="dchero-under-eighteen" name="notOverEighteen" type="checkbox" value="" onChange=""> Check if True
+					</label>
+				<% } %>
+			<% }) %>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Gender:</label>
+			<input type="text" class="form-control" id="dchero-gender" placeholder="Ex.: Male" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Hometown:</label>
+			<input type="text" class="form-control" id="dchero-hometown" placeholder="Ex.: Gotham City" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Current Location:</label>
+			<input type="text" class="form-control" id="dchero-current-location" placeholder="Ex.: Gotham City" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Image:</label>
+			<input type="text" class="form-control" id="dchero-image" placeholder="HTTP Link" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Affiliation:</label>
+			<input type="text" class="form-control" id="dchero-affiliation" placeholder="Ex.: Lawful Good" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label>Does This Character have Superpowers?</label>
+			<div class="form-check">
+			<% Testmodel.forEach((item, i) => { %>
+				<% if (item.lovesMemes === true) { %>
+					<label class="form-check-label">
+						<input class="form-check-input" id="dchero-has-superpowers" name="hasSuperpowers" type="checkbox" value="" onChange="" checked> Check if True
+					</label>
+				<% } else { %>
+					<label class="form-check-label">
+						<input class="form-check-input" id="dchero-has-no-superpowers" name="hasNoSuperpowers" type="checkbox" value="" onChange="" > Check if True
+					</label>
+				<% } %>
+			<% }) %>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Powers:</label>
+			<input type="text" class="form-control" id="dchero-powers" placeholder="Ex.: Persuasion, Top-Tier Analysis/Deduction, etc." value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Abilities:</label>
+			<input type="text" class="form-control" id="dchero-abilities" placeholder="Ex.: Master of Stealth, Martial Arts Master" value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Arsenal:</label>
+			<input type="text" class="form-control" id="dchero-arsenal" placeholder="Ex.: Semi-Bulletproof Suit, Utility Belt, Batarangs, etc." value="" onKeyPress="" onChange="">
+		</div>
+		<div class="form-group">
+			<label class="form-control-label">Weaknesses:</label>
+			<input type="text" class="form-control" id="dchero-weaknesses" placeholder="Ex.: Universal Human Limitations, Difficulty in Trust, etc." value="" onKeyPress="" onChange="">
+		</div>
+	</form>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	<button value="Submit" type="button" class="btn btn-primary" data-dismiss="modal" onClick="">Save changes</button>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "rpg-character-sheet-maker",
+  "version": "1.0.0",
+  "description": "Final project for General Assembly WDI program",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssheehan1210/rpg-character-sheet-maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssheehan1210/rpg-character-sheet-maker/issues"
+  },
+  "homepage": "https://github.com/ssheehan1210/rpg-character-sheet-maker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.13.5",
+    "request": "^2.83.0"
+  }
+}

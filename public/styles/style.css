@@ -1,0 +1,11 @@
+body {
+  background-color: grey;
+  color: white;
+}
+#exampleModalLong {
+  background-color: unset;
+  color: black;
+}
+#header-name-column {
+  text-align: center;
+}
